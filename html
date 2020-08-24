@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <!--  Meta  -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>My First Project!</title>
+  <style>
+    body{
+      margin:0;
+      padding:0;
+      background-color: black;
+      background-size: cover;
+      font-family: 'Quicksand', sans-serif;
+    }
+    
+    .header{
+      position: absolute;
+      text-align: center;
+      top:50%;
+      left:25%;
+      transform: translate(-50px,-50px);
+      margin:0;
+      padding:0,20px;
+      font-size: 10em;
+      color: #fff;    
+      text-shadow: 0 0 20px #ff085b;
+      letter-spacing: 1.7rem;
+    }
+    .header:after{
+      content: attr(data-text);
+      position: absolute;
+      top:0;
+      left:0;
+      padding: 0 20px;
+      z-index:-1;
+      color: #ff085b;
+      filter: blur(15px);
+    }
+    .nav {
+  overflow: hidden;
+  background-color: black;
+  text-align:right;
+  font-size:25px;
+   word-spacing: 30px;
+   padding: 20px;
+       font-family: 'Quicksand', cursive;
+}
+    .nav a{
+      color: white;
+ }
+    .nav a.right{
+      float:right;
+    }
+    
+    .nav a:hover {
+  background-color: #ddd;
+  color: black;
+  padding: 20px;
+}
+    
+  </style>
+</head>
+<body>
+  
+  <div class="nav">
+   <a href="#">Home</a>
+   <a href="#">Rounds</a>
+   <a href="#">Quizzes</a>
+  </div>
+  
+ <div>
+   <h1 class="header" data-text="Vocanza">Vocanza</h1>
+   </h1>
+  </div>
+</body>
+</html>
