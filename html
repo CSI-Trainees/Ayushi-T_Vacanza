@@ -26,35 +26,60 @@
       background-color: black;
       background-size: cover;
          }
-    a{
-      top: 0px;
-      right: -480px;
-      position: relative;
-      display: inline-block;
-      padding: 40px 30px;
-      margin: 40px 30;
-      color: #03e9f4;
-     font-size: 24px;
-      text-decoration: none;
-      text-transformation: uppercase;
-      transition: 0.5s;
-      letter-spacing: 4px;
-    }
-    
-    a:hover{
-      background: #03e9f4;
+  
+         section {
+    display: flex;
+    justify-content: center;
+}
+ 
+nav {
+    background-color: rgba(253, 253, 253, 0.78);
+    position:relative;
+    top:0;
+    width:100vw;
+    height:10vh;
+   left:-140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+ 
+.menu {
+    font-size: 2vw;
+    padding: 0vh 2vw 0vh 2vw;
+    text-decoration: none;
+    font-family: 'Germania One';
+    color: forestgreen;
+}
+ 
+.menu:hover {
+    background-color: rgba(247, 245, 245, 0.47);
+}
+
+ .logo{
+   top:8em;
+   position:relative;
+    left:43em;
+   border-radius: 50%;
+  
+ }
+
+ .logo:hover{
+  background: #03e9f4;
       color: #050801;
       box-shadow: 0 0 5px #03e9f4,
                   0 0 25px #03e9f4,
                   0 0 50px #03e9f4,
                   0 0 200px #03e9f4;
-    }  
-   
-       
+                  
+                  
+ }
+  
     .header{
       position: absolute;
       text-align: center;
-      top:50%;
+      top:35%;
       left:30%;
       transform: translate(-50px,-50px);
       margin:0;
@@ -77,7 +102,7 @@
     }
    .button1{
       top: 20em;
-      left: 20em;
+      right: 20em;
       position: relative;
       display: inline-block;
       padding: 25px 30px;
@@ -96,10 +121,19 @@
                   0 0 200px #03e9f4;
       
     }
-    
+   
+    .button1:hover{
+      background: #03e9f4;
+      color: #050801;
+      box-shadow: 0 0 5px #03e9f4,
+                  0 0 25px #03e9f4,
+                  0 0 50px #03e9f4,
+                  0 0 200px #03e9f4;
+    }  
+   
      .button2{
       top: 20em;
-      right: 13em;
+      right:70em;
       position: relative;
       display: inline-block;
       padding: 25px 40px;
@@ -116,108 +150,42 @@
                   0 0 50px #03e9f4,
                   0 0 200px #03e9f4;
     }
-    
-    .block1{
-       border-radius: 1em;
-      top:650px;
-      margin:40px 180px;
-      padding:50px;
-      right:80px;
-      left:80px;
-     background-color:black;
-      position: absolute;     
-      border: 0.2em solid lighten(#39ff14,10%);
-  box-shadow: 
-    inset 0 0 0.4em #39ff14,
-    0 0 0.4em #39ff14;
-                   
-    }
-    .block1:hover{
-      opacity:1;
-      border: 5px #39ff14;
-      box-shadow: 0 0 10px #39ff14,
-                  0 0 0px #39ff14,
-                  0 0 0px #39ff14,
-                  0 0 40px #39ff14;
-    }
+    .button2:hover{
+      background: #03e9f4;
+      color: #050801;
+      box-shadow: 0 0 5px #03e9f4,
+                  0 0 25px #03e9f4,
+                  0 0 50px #03e9f4,
+                  0 0 200px #03e9f4;
+    }  
+
+    .card1{
+      top:50em;
+    left:0px;
+   position:relative;
+    left: -1800px;
    
-   
-     .block2{
-        border-radius: 1em;
-      top:65em;
-      margin:40px 180px;
-      padding:50px;
-      right:80px;
-      left:80px;
-      background-color:black;
-      position: absolute;     
-      border: 0.2em solid lighten(#fc2205,10%);
-  box-shadow: 
-    inset 0 0 0.4em #fc2205,
-    0 0 0.4em #fc2205; 
-                 
+
     }
-    
-    .block2:hover{
-      opacity:1;
-      border: 5px #318B86;
-      box-shadow: 0 0 10px #fc2205,
-                  0 0 0px #fc2205,
-                  0 0 0px #fc2205,
-                  0 0 40px #fc2205;
-    }
-    
-   .block3{
-      border-radius: 1em;
-     top:90em;
-      margin:40px 180px;
-      padding:50px;
-      right:80px;
-      left:80px;
-      background-color:black;
-      position: absolute;     
-      border: 0.2em solid lighten(#05d5fc,10%);
-  box-shadow: 
-    inset 0 0 0.4em #05d5fc,
-    0 0 0.4em #05d5fc;   }
-    
-    .block3:hover{
-      opacity:1;
-      border: 5px #318B86;
-      box-shadow: 0 0 10px #05d5fc,
-                  0 0 0px #05d5fc,
-                  0 0 0px #05d5fc,
-                  0 0 40px #05d5fc;
-    } 
+
+ 
   </style>
  
 </head>
 <body>
-   <a href="#">
-     <span></span>
-     <span></span>
-     <span></span>
-     <span></span>
-     Home
-   </a>
-   
-    <a href="#">
-     <span></span>
-     <span></span>
-     <span></span>
-     <span></span>
-     Quiz
-   </a>
-   
-    <a href="#">
-     <span></span>
-     <span></span>
-     <span></span>
-     <span></span>
-     Rounds
-   </a>
- 
-  
+
+  <div>
+    
+    <a class="logo"><img src="https://i.ibb.co/CBRyPdk/logo.png" alt="logo" border="0" width="125" height="125"></a>
+  </div>
+  <section>
+    <nav>
+           <a class="menu">Home</a>
+           <a class="menu">Quizzes</a>
+           <a class="menu">Rounds</a>
+           <a class="menu">Contact Us</a>
+    </nav>
+</section>
   
  <div>
    <h1 class="header" data-text="Vacanza">Vacanza</h1>
@@ -232,25 +200,21 @@
   <a href="#" class="button2">Start</a>
   </div>
   
-<div class=block1>
-  <h1 class="round1" style="color: white ;">ROUND 1</h1><br>
-  <h3 class="content1" style="color: white ;">Round 1 comprises of 4 domains from which participants have to select at least 2 domains and can choose maximum of 4 domains for more points. The more domain you opt for, the more you score.</h3><br>
-  <h2 style="color: white ;"> The four domains are:</h2>
-  <h3 style="color: white ;"> Vintage Photography | Leaf Collage | Original Art | Face Mask Art </h3>
-  </div>
-  
-  <div class=block2>
-  <h1 class="round2" style="color: white ;">ROUND 2</h1><br>
-  <h3 class="content2" style="color: white ;">Round 2 comprises of 4 domains from which participants have to select at least 2 domains and can choose maximum of 4 domains for more points. The more domain you opt for, the more you score.</h3><br>
-  <h2 style="color: white ;"> The four domains are:</h2>
-  <h3 style="color: white ;"> Vintage Photography | Leaf Collage | Original Art | Face Mask Art </h3>
-  </div>
-  
-  <div class=block3>
-  <h1 class="round3" style="color: white ;">ROUND 3</h1><br>
-  <h3 class="content3" style="color: white;">Round 3 comprises of 4 domains from which participants have to select at least 2 domains and can choose maximum of 4 domains for more points. The more domain you opt for, the more you score.</h3><br>
-  <h2  style="color:white;"> The four domains are:</h2>
-  <h3 style="color: white;"> Vintage Photography | Leaf Collage | Original Art | Face Mask Art </h3>
+  <div class="cards">
+    <div class="card content">
+      <div class="card-content">
+        <div class="card-img">
+          <a class="card1"><img src="https://i.ibb.co/PjYNczz/quiz.jpg" alt="quiz" border="0" width="320" height="340"></a> </div>
+        <div class="card-label">E-Sports</div>
+        <div class="card-title">
+          Fnatic raises $19 million, shakes up leadership team
+        </div>
+      </div>
+    </div>
+    
+    <div class="card form">
+      <div class="form-title">Sign Up</div>
+    </div>
   </div>
   
   
