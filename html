@@ -22,7 +22,7 @@
       display:flex;
       text-decoration: none;
      min-height:100vh;
-      flex-direction: row;
+     flex-direction: row;
       background-color: black;
       background-size: cover;
          }
@@ -55,6 +55,7 @@ nav {
  
 .menu:hover {
     background-color: rgba(247, 245, 245, 0.47);
+    transform: scale(1.2); 
 }
 
  .logo{
@@ -67,6 +68,7 @@ nav {
 
  .logo:hover{
   background: #03e9f4;
+  transform: scale(1.5); 
       color: #050801;
       box-shadow: 0 0 5px #03e9f4,
                   0 0 25px #03e9f4,
@@ -160,14 +162,57 @@ nav {
     }  
 
     .card1{
-      top:50em;
-    left:0px;
+      top:47.7em;
+      overflow: hidden;
    position:relative;
-    left: -1800px;
+    left: -1350px;
    
-
     }
 
+    .card2{
+      top:25em;
+   
+   position:relative;
+    left: -1000px;
+    }
+
+    .card3{
+      top:5em;
+    
+   position:relative;
+    left: -1850px;
+    }
+ 
+ .outer{
+  border: 2px solid #03e9f4 ;
+  background-color: black;
+  color:#03e9f4;
+  width: 650px;
+      height: 165px;
+  font-size: 60px;
+  cursor: pointer;
+  position:relative;
+  top:-1.5em;
+  left:-1350px;
+ }
+
+ .outer:hover{
+  background: #03e9f4;
+      color:black;
+      box-shadow: 0 0 5px #03e9f4,
+                  0 0 25px #03e9f4,
+                  0 0 50px #03e9f4,
+                  0 0 200px #03e9f4;
+ }
+    
+
+    /* margin:0 50px;
+     background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+     border: 2px solid rgb(218, 231, 27);*/
+     
+   
+   
+   
  
   </style>
  
@@ -204,17 +249,21 @@ nav {
     <div class="card content">
       <div class="card-content">
         <div class="card-img">
-          <a class="card1"><img src="https://i.ibb.co/PjYNczz/quiz.jpg" alt="quiz" border="0" width="320" height="340"></a> </div>
+          <a class="card1"><img src="https://i.ibb.co/PjYNczz/quiz.jpg" alt="quiz" border="0" width="300" height="320"></a> </div>
         <div class="card-label">E-Sports</div>
         <div class="card-title">
           Fnatic raises $19 million, shakes up leadership team
         </div>
       </div>
     </div>
+
+    <a class="card2"><img src="https://i.ibb.co/JdTptWM/strangerthings.jpg" alt="strangerthings" border="0"width="300" height="320"></a>
     
-    <div class="card form">
-      <div class="form-title">Sign Up</div>
-    </div>
+    <a class="card3"><img src="https://i.ibb.co/3RwRtTS/technology.jpg" alt="technology" border="0"width="450" height="530"></a>
+  
+    
+      <div >
+        <button class="outer">Read More</button>
   </div>
   
   
