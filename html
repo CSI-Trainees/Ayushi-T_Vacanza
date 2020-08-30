@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,6 +16,7 @@
       padding:0;
       font-family:consolas;
       box-sizing: border-box;
+      list-style:none;
     }
     
     body{
@@ -66,17 +68,12 @@ nav {
   
  }
 
- .logo:hover{
-  background: #03e9f4;
-  transform: scale(1.5); 
-      color: #050801;
-      box-shadow: 0 0 5px #03e9f4,
-                  0 0 25px #03e9f4,
-                  0 0 50px #03e9f4,
-                  0 0 200px #03e9f4;
-                  
-                  
- }
+ .logo:hover img{ 
+
+  transition: 0.70s; 
+  transform: scale(1.2) rotate(360deg);
+       
+   }
   
     .header{
       position: absolute;
@@ -162,27 +159,44 @@ nav {
     }  
 
     .card1{
-      top:47.7em;
+      top:46.3em;
       overflow: hidden;
    position:relative;
     left: -1350px;
    
-    }
+    
+   
+    } 
+   
+
+.card1:hover img {
+  transform: scale(1.1);
+}
 
     .card2{
-      top:25em;
-   
+   top:25em;
    position:relative;
-    left: -1000px;
+   left: -1000px;
     }
 
+
+    .card2:hover img {
+   transform: scale(1.1);
+}
+
     .card3{
-      top:5em;
+      top:4.9em;
     
    position:relative;
     left: -1850px;
     }
- 
+
+    
+    .card3:hover img {
+  transform: scale(1.1);
+}
+
+    
  .outer{
   border: 2px solid #03e9f4 ;
   background-color: black;
@@ -204,16 +218,168 @@ nav {
                   0 0 50px #03e9f4,
                   0 0 200px #03e9f4;
  }
-    
-
     /* margin:0 50px;
      background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
-     border: 2px solid rgb(218, 231, 27);*/
-     
-   
-   
-   
- 
+     border: 2px solid rgb(218, 231, 27); */
+
+
+ul{
+  display:flex;
+}
+
+ul li{
+  top:30em;
+   position:relative;
+   display:block;
+   color:#666;
+   font-size: 30px;
+   height: 60px;
+   width:60px;
+   background:#171515;
+   line-height:60px;
+   border-radius:50%;
+   margin: 0 15px;
+   text-align:center;
+   cursor:pinter;
+   transition:0.5s;
+   left:-1550px;
+}
+ul li:before{
+  position:absolute;
+  content:'';
+  top:0;
+  left:0;
+  height:100%;
+  width:100%;
+  border-radius:50%;
+  z-index: -1;
+  transform:scale(0.9);
+  transition: 0.5s;
+}
+ul li:nth-child(1):before{
+  background:#4267B2;
+}
+
+ul li:nth-child(2):before{
+  background:#1DA1F2;
+}
+
+ul li:nth-child(3):before{
+  background:#E1306C;
+}
+
+ul li:nth-child(4):before{
+  background:#2867B2;
+}
+
+ul li:nth-child(5):before{
+  background:#ff0000;
+}
+
+ul li:hover:before{
+  filter:blur(3px);
+  transform:scale(1.2);
+  /*box-shadow: 0 0 15px #d35400*/
+}
+ul li:nth-child(1):hover:before{
+  box-shadow: 0 0 15px #4267B2;
+}
+ul li:nth-child(2):hover:before{
+  box-shadow: 0 0 15px #1DA1F2;
+}
+ul li:nth-child(3):hover:before{
+  box-shadow: 0 0 15px #E1306C;
+}
+ul li:nth-child(4):hover:before{
+  box-shadow: 0 0 15px #2867B2;
+}
+ul li:nth-child(5):hover:before{
+  box-shadow: 0 0 15px #ff0000;
+}
+
+
+ul li:nth-child(1):hover{
+  color:#456cba;
+  box-shadow: 0 0 15px #4267B2;
+  text-shadow: 0 0 15px #4267B2;
+}
+ul li:nth-child(2):hover{
+  color:#26a4f2;
+  box-shadow: 0 0 15px #1DA1F2;
+  text-shadow: 0 0 15px #1DA1F2;
+}
+ul li:nth-child(3):hover{
+  columns: #e23670;;
+  box-shadow: 0 0 15px #E1306C;
+  text-shadow: 0 0 15px #E1306C;
+}
+ul li:nth-child(4):hover{
+  color:#2a6cbb;
+  box-shadow: 0 0 15px #2867B2;
+  text-shadow: 0 0 15px #2867B2;
+}
+ul li:nth-child(5):hover{
+  color:#ff1a1a;
+  box-shadow: 0 0 15px #ff0000;
+  text-shadow: 0 0 15px #ff0000;
+}
+
+.new{
+  top:10em;
+  position: absolute;
+  writing-mode: vertical-lr;
+  display: inline;
+  color: rgb(248, 8, 176);
+  right:1000px;
+  word-spacing: 1.5px;
+  transform: rotate(180deg);
+  font-size:150px;
+    }
+.new1{
+  top:5.75em;
+  position: absolute;
+  display: inline;
+  color: white;
+  right:460px;
+  word-spacing: 1.5px;
+  font-size:250px;
+}
+.new2{
+  top:16.5em;
+  position: absolute;
+  display: inline;
+  color: #03e9f4;
+  right:480px;
+  word-spacing: 1.5px;
+  font-size:100px;
+  font-family: 'Bad Script', cursive;
+  letter-spacing: 1.4rem;
+}
+.new3{
+  top:22.4em;
+  position: absolute;
+  display: inline;
+  color: white;
+  right:690px;
+  word-spacing: 1.5px;
+  font-size:80px;
+}
+.new4{
+  top:7.38em;
+  position: absolute;
+  display: inline;
+  right:530px;
+  word-spacing: 2px;
+  font-size:250px;
+  
+      color: #050801;
+      text-shadow: 0 0 5px #03e9f4,
+                  0 0 25px #03e9f4,
+                  0 0 50px #03e9f4,
+                  0 0 200px #03e9f4;
+}
+
+
   </style>
  
 </head>
@@ -245,28 +411,56 @@ nav {
   <a href="#" class="button2">Start</a>
   </div>
   
+  
   <div class="cards">
     <div class="card content">
       <div class="card-content">
-        <div class="card-img">
-          <a class="card1"><img src="https://i.ibb.co/PjYNczz/quiz.jpg" alt="quiz" border="0" width="300" height="320"></a> </div>
-        <div class="card-label">E-Sports</div>
-        <div class="card-title">
-          Fnatic raises $19 million, shakes up leadership team
+           <a class="card1"><img src="https://i.ibb.co/PjYNczz/quiz.jpg" alt="quiz" border="0" width="300" height="320"></a>
+          <div class="card-title">
+          Round 1
         </div>
       </div>
     </div>
 
     <a class="card2"><img src="https://i.ibb.co/JdTptWM/strangerthings.jpg" alt="strangerthings" border="0"width="300" height="320"></a>
     
-    <a class="card3"><img src="https://i.ibb.co/3RwRtTS/technology.jpg" alt="technology" border="0"width="450" height="530"></a>
-  
-    
+    <a class="card3"><img src="https://i.ibb.co/3RwRtTS/technology.jpg" alt="technology" border="0"width="450" height="530"></a> 
+
+
       <div >
         <button class="outer">Read More</button>
   </div>
-  
-  
+
+<div>
+  <h1 class="new" data-text="Unleash">Unleash</h1>
+</div>
+
+<div>
+  <h1 class="new1" data-text="Your">Your</h1>
+</div>
+
+<div>
+  <h1 class="new2" data-text="potential">potential</h1>
+</div>
+
+<div>
+  <h1 class="new3" data-text="At">At</h1>
+</div>
+
+<div>
+  <h1 class="new4" data-text="CSI">CSI</h1>
+</div>
+
+
+
+  <ul>
+    <li><i class="fab fa-facebook-f"></i></li>
+    <li><i class="fab fa-twitter"></i></li>
+    <li><i class="fab fa-instagram"></i></li>
+    <li><i class="fab fa-linkedin-in"></i></li>
+    <li><i class="fab fa-youtube"></i></li>
+  </ul>
+
 </body>
 </html>
 
